@@ -64,14 +64,16 @@ public class Campus implements Comparable<Campus>{
                String s= sc.next();
                 this.code=Integer.parseInt(s);
                 if(code<=0){
-                    Flag=true;
+                    
                     throw new Exception();
                 }
                 }catch (NumberFormatException e){
                     System.out.println("Wrong Format Code(Code is number)");
+                     Flag=true;
                 }
                 catch(Exception e1){
                     System.out.println("Code !>0");
+                     Flag=true;
                 }
     }while(Flag);
     }

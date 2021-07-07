@@ -175,7 +175,7 @@ public class Tester {
                             tmp.AddID();
                             tmp=ListStudent.Search(tmp.getID());
                             if(tmp==null) System.out.println("Don't have ID");
-                            ListCampus.RemoveStaff(tmp.getID());
+                            ListCampus.Remove(tmp.getID());
                             
                             break;    
                         case 5: 

@@ -103,7 +103,7 @@ public class Tester {
                             C.AddCode();
                             C=ListCampus.Search(C.getCode());
                             if(C==null) System.out.println("Don't have ID");
-                            ListCampus.UpdateStaff(C.getCode());
+                            ListCampus.Update(C.getCode());
                             break;
                         case 4: 
                             System.out.println("Input ID you want remove");
@@ -111,7 +111,7 @@ public class Tester {
                             C.AddCode();
                             C=ListCampus.Search(C.getCode());
                             if(C==null) System.out.println("Don't have ID");
-                            ListCampus.RemoveStaff(C.getCode());
+                            ListCampus.Update(C.getCode());
                             
                             break;    
                         case 5: 

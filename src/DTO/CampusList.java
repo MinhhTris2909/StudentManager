@@ -38,14 +38,14 @@ public class CampusList {
         return null;
     }
     //Update by ID Staff
-    public boolean UpdateStaff(int id){
+    public boolean Update(int id){
         Campus tmp = Search(id);
         if (tmp==null) return false;
         tmp.setCode(id);
         tmp.AddCampus();
      return true;   
     }
-    public boolean RemoveStaff(int id){
+    public boolean Remove(int id){
         Campus tmp= Search(id);
         if(tmp==null) return false;
         return CampusList.remove(tmp);

@@ -14,9 +14,12 @@ import java.text.SimpleDateFormat;
  * @author phamt
  */
 public class FormatForm {
-    public FormatForm(){
-        
+    public FormatForm(){    
     }
+    public static String StringPhone= "^[0-9]{10}$";
+    public static boolean isValidPhoneNo(String iPhoneNo) {
+        return iPhoneNo.matches(StringPhone);
+        }
     final public static String StringInput = "^[a-zA-Z\\s]+";
     ///Funtion to Format Name
     public static String toTitleCase(String givenString) {
